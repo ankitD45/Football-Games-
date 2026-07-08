@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Penalty Night — Football Shootout</title>
+<meta name="theme-color" content="#0b1626" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading splash shown before Phaser boots -->
+  <div id="preload-splash">
+    <div class="splash-badge">PENALTY <span>NIGHT</span></div>
+    <div class="splash-bar"><div class="splash-bar-fill" id="splash-fill"></div></div>
+    <div class="splash-hint">Warming up the floodlights…</div>
+  </div>
+
+  <!-- Phaser mounts here -->
+  <div id="game-root"></div>
+
+  <!-- Phaser 3 engine (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+
+  <!-- Utilities -->
+  <script src="js/utils/SaveManager.js"></script>
+  <script src="js/utils/AudioManager.js"></script>
+  <script src="js/utils/TextureFactory.js"></script>
+  <script src="js/utils/UIKit.js"></script>
+
+  <!-- Data -->
+  <script src="js/data/GameData.js"></script>
+
+  <!-- Scenes -->
+  <script src="js/scenes/BootScene.js"></script>
+  <script src="js/scenes/MenuScene.js"></script>
+  <script src="js/scenes/SettingsScene.js"></script>
+  <script src="js/scenes/ShopScene.js"></script>
+  <script src="js/scenes/AchievementsScene.js"></script>
+  <script src="js/scenes/ShooterScene.js"></script>
+  <script src="js/scenes/GoalkeeperScene.js"></script>
+  <script src="js/scenes/GameOverScene.js"></script>
+
+  <!-- Boot -->
+  <script src="js/main.js"></script>
+</body>
+</html>
